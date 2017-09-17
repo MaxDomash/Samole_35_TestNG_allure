@@ -49,7 +49,7 @@ public class PrimeNumberCheckerTest implements ITest {
         return al.iterator();
     }
 
-//    @Override // @Override(id = 0)
+    @Override // @Override(id = 0)
     @Test(timeOut = 1000, dataProvider = "prime number")
     public void test(String a, String b, String c) {
         assertThat(PrimeNumberChecker.validate(Integer.parseInt(b)), equalTo(Boolean.parseBoolean(c)));
